@@ -4,6 +4,7 @@ import Batman from './Batman.jsx';
 import Spiderman from './Spiderman.jsx';
 import Superman from './Superman.jsx';
 import './App.css';
+import BlackPanther from "./BlackPanther.jsx";
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
         <h1>Page Content</h1>
         <ul>
           <li>
-            <NavLink to="/" className={({ isActive }) => (isActive ? 'hurray' : 'inactive')}>
+            <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? 'hurray' : 'inactive')}
+            >
               Heros
             </NavLink>
           </li>
@@ -25,7 +29,10 @@ function App() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/batman" className={({ isActive }) => (isActive ? 'hurray' : 'inactive')}>
+            <NavLink
+                to="/batman"
+                className={({ isActive }) => (isActive ? 'hurray' : 'inactive')}
+            >
               Batman
             </NavLink>
           </li>
@@ -37,6 +44,14 @@ function App() {
               Superman
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/blackpanther"
+              className={({ isActive }) => (isActive ? 'hurray' : 'inactive')}
+            >
+              Black Panther
+            </NavLink>
+          </li>
         </ul>
 
         <Routes>
@@ -44,6 +59,7 @@ function App() {
           <Route path="/batman" element={<Batman />} />
           <Route path="/spiderman" element={<Spiderman />} />
           <Route path="/superman" element={<Superman />} />
+          <Route path="/blackpanther" element={<BlackPanther />} />
         </Routes>
       </Router>
     </div>
