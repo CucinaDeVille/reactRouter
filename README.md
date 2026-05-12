@@ -1,5 +1,10 @@
 # React + Vite
 
+Create new project with `npm create vite@latest <project-name> -- --template react`
+... or run this project with `npm run dev`.
+
+Additionally, this project requires *react-router-dom*, which can be installed via `npm install react-router-dom@6`. Run the command inside the project directory (where the *package.json* file is located).
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
